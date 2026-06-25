@@ -477,6 +477,7 @@ function sendOrder() {
     ? `مرحباً، أود الطلب من the ROVN:\n\n`
     : `Hello, I'd like to order from the ROVN:\n\n`;
   msg += `▪ ${currentP.en} / ${currentP.ar}\n`;
+  msg += `▪ ${lang==='ar'?'الصورة':'Image'}: ${currentP.imgs[0]}\n`;
   if(color) msg += `▪ ${lang==='ar'?'اللون':'Color'}: ${color}\n`;
 
   if(notes) msg += `▪ ${lang==='ar'?'ملاحظات':'Notes'}: ${notes}\n`;
